@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Paciente</title>
+</head>
+<body>
+    <h1>Olá, seja bem vinde!</h1>
+    <br>
+    <h2>Formulário de Cadastro</h2>
+    
+    <form method="post">
+        {% csrf_token %}
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+        <label for="email">Digite seu email:</label>
+        <input type="text" id="email" name="email" />
+        <br><br>
+
+        <label for="senha">Digite sua senha:</label>
+        <input type="password" id="password" name="senha" />
+        <br> 
+        <br>
+        <label for="cpf">Digite seu CPF:</label>
+        <input type="text" id="cpf" name="cpf">
+        <br>
+        <br>
+        <label for="date"> Insira sua data de nascimento</label>
+        <input type="date" name="nascimento" id="dataNasc">
+        <br> <br>
+        <label for="identidadeDeGenero">Selecione a sua identidade de genero:</label>
+        <select name="genero" id="genero">
+            <option value="mulherCis">Mulher Cis</option>
+            <option value="homemCis">Homem Cis</option>
+            <option value="mulherTrans">Mulher Trans</option>
+            <option value="homemTrans">Homem Trans</option>
+            <option value="NB">Não Binario</option>
+            <option value="agenero">A Genero</option>
+        </select>
+        <label for="endereco"> Insira seu endereço:</label>
+        <input type="text" name="endereco" id="endereco">
+        <br><br>
+        <label for="celular"> Insira seu celular:</label>
+        <input type="text" name="celular" id="celular">
+        <br><br>
+        <label for="contatoEmergencial"> Insira seu contato emergencial:</label>
+        <input type="text" name="contatoEmergencial" id="contatoEmergencial">
+        <br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+
+</body>
+</html>
