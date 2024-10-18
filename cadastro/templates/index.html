@@ -13,7 +13,7 @@
     <br>
     <h2>Formulário de Cadastro</h2>
     
-    <form method="post">
+    <form method="POST">
         {% csrf_token %}
         <label for="nome">Digite seu nome:</label>
         <input type="text" id="nome" name="nome">
@@ -52,6 +52,9 @@
         <input type="text" name="contatoEmergencial" id="contatoEmergencial">
         <br><br>
         <button type="submit">Cadastrar</button>
+        <br>
+        <br>
+        <a href="login.html" class="btn" title="Ir para a página de login">Já tenho Cadastro :D </a>
     </form>
 
 

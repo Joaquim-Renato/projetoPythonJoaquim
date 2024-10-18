@@ -73,6 +73,24 @@ button {
 button:hover {
     background-color: #bf717d; /* Cor de destaque no hover */
 }
+.btn{
+    width: 100%;
+    padding: 12px;
+    background-color: #d48b94; /* Rosa flor de cerejeira para o botão */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    
+     
+}
+ .btn:hover {
+        background-color: #bf717d; /* Cor de destaque no hover */
+    } 
+
 
 form select {
     width: 100%;
